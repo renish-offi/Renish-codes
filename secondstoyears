@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class secondstoyears {
+
+    public static void main(String[] Strings) {
+
+
+        double secondsInYear = 60 * 60 * 24 * 365;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Input the number of seconds: ");
+
+        double sec = input.nextDouble();
+
+        long years = (long) (sec / secondsInYear);
+        int days = (int) (sec / 60 / 60 / 24) % 365;
+
+        System.out.println((int) sec + " seconds is approximately " + years + " years and " + days + " days");
+    }
+}
